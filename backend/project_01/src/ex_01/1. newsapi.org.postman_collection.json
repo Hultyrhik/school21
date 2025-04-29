@@ -1,0 +1,206 @@
+{
+  "info": {
+    "_postman_id": "d4207896-cbf3-4f21-b84f-832ebac92678",
+    "name": "1. newsapi.org",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39595387",
+    "_collection_link": "https://universal-astronaut-272677.postman.co/workspace/Team-Workspace~297736f0-f532-47c0-87a4-c9537ef84990/collection/39595387-d4207896-cbf3-4f21-b84f-832ebac92678?action=share&source=collection_link&creator=39595387"
+  },
+  "item": [
+    {
+      "name": "Example",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://newsapi.org/v2/everything?q=Apple&from=2025-04-20&sortBy=popularity&apiKey=",
+          "protocol": "https",
+          "host": ["newsapi", "org"],
+          "path": ["v2", "everything"],
+          "query": [
+            {
+              "key": "q",
+              "value": "Apple"
+            },
+            {
+              "key": "from",
+              "value": "2025-04-20"
+            },
+            {
+              "key": "sortBy",
+              "value": "popularity"
+            },
+            {
+              "key": "apiKey",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "1. Linux",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://newsapi.org/v2/everything?q=Linux&apiKey=",
+          "protocol": "https",
+          "host": ["newsapi", "org"],
+          "path": ["v2", "everything"],
+          "query": [
+            {
+              "key": "q",
+              "value": "Linux"
+            },
+            {
+              "key": "apiKey",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Development",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://newsapi.org/v2/everything?q=development&from=2025-04-05&apiKey=&language=ru",
+          "protocol": "https",
+          "host": ["newsapi", "org"],
+          "path": ["v2", "everything"],
+          "query": [
+            {
+              "key": "q",
+              "value": "development"
+            },
+            {
+              "key": "from",
+              "value": "2025-04-05"
+            },
+            {
+              "key": "apiKey",
+              "value": ""
+            },
+            {
+              "key": "language",
+              "value": "ru"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Linux in Russian",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://newsapi.org/v2/top-headlines?apiKey=&q=science&sources=google-news-ru,lenta,rbc",
+          "protocol": "https",
+          "host": ["newsapi", "org"],
+          "path": ["v2", "top-headlines"],
+          "query": [
+            {
+              "key": "apiKey",
+              "value": ""
+            },
+            {
+              "key": "q",
+              "value": "science"
+            },
+            {
+              "key": "sources",
+              "value": "google-news-ru,lenta,rbc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sources",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://newsapi.org/v2/top-headlines/sources?language=ru&apiKey=",
+          "protocol": "https",
+          "host": ["newsapi", "org"],
+          "path": ["v2", "top-headlines", "sources"],
+          "query": [
+            {
+              "key": "country",
+              "value": "ru",
+              "disabled": true
+            },
+            {
+              "key": "language",
+              "value": "ru"
+            },
+            {
+              "key": "apiKey",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

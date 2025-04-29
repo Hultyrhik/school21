@@ -1,0 +1,254 @@
+{
+  "info": {
+    "_postman_id": "3c64361d-cd7f-4fec-8dc6-36565266f818",
+    "name": "3. telegram",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39595387",
+    "_collection_link": "https://universal-astronaut-272677.postman.co/workspace/Team-Workspace~297736f0-f532-47c0-87a4-c9537ef84990/collection/39595387-3c64361d-cd7f-4fec-8dc6-36565266f818?action=share&source=collection_link&creator=39595387"
+  },
+  "item": [
+    {
+      "name": "getMe",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/getMe",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "getMe"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getUpdates",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/getUpdates",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "getUpdates"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sendMessage",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/sendMessage?chat_id=2102538318&text=Hello!",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "sendMessage"],
+          "query": [
+            {
+              "key": "chat_id",
+              "value": "2102538318"
+            },
+            {
+              "key": "text",
+              "value": "Hello!"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sendDocument",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "document",
+              "type": "file",
+              "src": "postman-cloud:///1f02126c-e1a0-4150-894c-5b19e8fda16a"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/sendDocument?chat_id=2102538318&text=Hello!",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "sendDocument"],
+          "query": [
+            {
+              "key": "chat_id",
+              "value": "2102538318"
+            },
+            {
+              "key": "text",
+              "value": "Hello!"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sendPhoto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "photo",
+              "type": "file",
+              "src": "/home/hulty/Pictures/Screenshots/Screenshot from 2025-04-27 14-28-30.png"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/sendPhoto?chat_id=2102538318&text=Hello!",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "sendPhoto"],
+          "query": [
+            {
+              "key": "chat_id",
+              "value": "2102538318"
+            },
+            {
+              "key": "text",
+              "value": "Hello!"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sendPhoto PDF",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "photo",
+              "type": "file",
+              "src": "/home/hulty/Desktop/0_it_studing/yii2/yii-guide-2.0-en.pdf"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/sendPhoto?chat_id=2102538318&text=Hello!",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "sendPhoto"],
+          "query": [
+            {
+              "key": "chat_id",
+              "value": "2102538318"
+            },
+            {
+              "key": "text",
+              "value": "Hello!"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "sendPhoto DOCX",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "photo",
+              "type": "file",
+              "src": "postman-cloud:///1f02339d-234d-4070-a15c-de3f565e8642"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/sendPhoto?chat_id=2102538318&text=Hello!",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "sendPhoto"],
+          "query": [
+            {
+              "key": "chat_id",
+              "value": "2102538318"
+            },
+            {
+              "key": "text",
+              "value": "Hello!"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getUserProfilePhotos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "photo",
+              "type": "file",
+              "src": "/home/hulty/Desktop/0_it_studing/yii2/yii-guide-2.0-en.pdf"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://api.telegram.org/bot{{a}}/getUserProfilePhotos?user_id=2102538318",
+          "protocol": "https",
+          "host": ["api", "telegram", "org"],
+          "path": ["bot{{a}}", "getUserProfilePhotos"],
+          "query": [
+            {
+              "key": "user_id",
+              "value": "2102538318"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "a",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

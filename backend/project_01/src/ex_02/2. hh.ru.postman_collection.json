@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "8cce3650-68ac-4c11-bddd-1b7dea6000cb",
+		"name": "2. hh.ru",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39595387",
+		"_collection_link": "https://universal-astronaut-272677.postman.co/workspace/Team-Workspace~297736f0-f532-47c0-87a4-c9537ef84990/collection/39595387-8cce3650-68ac-4c11-bddd-1b7dea6000cb?action=share&source=collection_link&creator=39595387"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hh.ru/vacancy?area=1&ored_clusters=true&search_period=30",
+					"protocol": "https",
+					"host": [
+						"hh",
+						"ru"
+					],
+					"path": [
+						"vacancy"
+					],
+					"query": [
+						{
+							"key": "area",
+							"value": "1"
+						},
+						{
+							"key": "ored_clusters",
+							"value": "true"
+						},
+						{
+							"key": "search_period",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
